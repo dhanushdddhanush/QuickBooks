@@ -9,7 +9,7 @@
   },
   "apis": {
     "rest": {
-      "openApiSpecUrl": "https://your-domain.com/openapi.json",
+      "openApiSpecUrl": "https://quickbooks-hsavcvd9g2cud6bs.canadacentral-01.azurewebsites.net/openapi.json",
       "authentication": {
         "type": "none"
       }
