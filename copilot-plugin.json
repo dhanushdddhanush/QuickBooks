@@ -1,0 +1,38 @@
+{
+  "$schema": "https://schemas.microsoft.com/copilot/plugin/v1.0/schema.json",
+  "name": "quickbooks_invoice_plugin",
+  "description": "Plugin for retrieving invoices from QuickBooks.",
+  "version": "1.0.0",
+  "publisher": {
+    "name": "Your Company Name",
+    "email": "support@yourcompany.com"
+  },
+  "apis": {
+    "rest": {
+      "openApiSpecUrl": "https://your-domain.com/openapi.json",
+      "authentication": {
+        "type": "none"
+      }
+    }
+  },
+  "endpoints": [
+    {
+      "name": "GetInvoices",
+      "description": "Fetches the 10 most recent invoices from QuickBooks",
+      "method": "GET",
+      "path": "/invoices",
+      "parameters": [],
+      "responses": {
+        "200": {
+          "description": "Invoice data from QuickBooks"
+        }
+      }
+    }
+  ],
+  "capabilities": [
+    {
+      "type": "search",
+      "description": "Allows Copilot to search recent invoices"
+    }
+  ]
+}
